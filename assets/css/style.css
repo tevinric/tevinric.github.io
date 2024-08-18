@@ -339,13 +339,9 @@ main {
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-450);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
-  word-wrap: normal;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .info-content .title {
@@ -356,6 +352,9 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  white-space: normal;
+  word-wrap: break-word; /* Optional: Ensures long words break to the next line */
+  width: 100%; /* Ensure the container has a defined width */
 }
 
 .info_more-btn {
